@@ -3,17 +3,26 @@
     padding: 0;
 }
 .banner>img{
-    width: 9vw;
+    width: 5vw;
     height: 14vh;
     background-color: transparent;
     position: relative;
-    left: 2vw;
-    bottom: 9vh;
+    left: 5vw;
+    bottom: 10vh;
 }
 .banner>h1{
     position: relative;
     left: 11vw;
     transition: transform 1.5s ease;
+    color: #69e2b8;
+}
+.tagline>h2{
+    position: relative;
+    bottom: 7vh;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: #69e2b8;
 }
 body{
     display: flex;
@@ -77,9 +86,9 @@ body{
     color: #69e2b8;
     border-radius: 30px;
 }
-/* .inside:hover{
-    box-shadow: 2px 2px 15px 1px #69e2b8;
-} */
+.inside:hover{
+    box-shadow: 5px 5px 15px 5px #046f80;
+}
 .input{
     background-color: transparent;
     display: flex;
