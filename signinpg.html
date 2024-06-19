@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign.css">
+    <style>
+        img{
+            height: 60vh;
+            width: 30vw;
+            border-radius: 15px;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <div class="banner">
+            <h1>Waste Wise</h1>
+            <img src="logo.png" alt="image">
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="https://waste-management-world.com/imager/media/wasteManagementWorld/3820706/AdobeStock_571968683_b0464c6958b2ce61ced917e5958dc330.jpeg" alt="Image 1"></div>
+                <div class="slide"><img src="https://www.uffizio.com/wp-content/uploads/2024/01/ADAS-25-1-2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="https://www.alliedmarketresearch.com/assets/sampleimages/e-waste-management-market-1698938927.png" alt="Image 3"></div>
+                <div class="slide"><img src="https://t4.ftcdn.net/jpg/07/20/39/51/360_F_720395103_7ILi0y8uiSwP0bqI0my2Zqy3nke0ENh0.jpg" alt="Image 3"></div>
+                
+            </div>
+        </div>
+        
+        <script>
+            let slideIndex = 0;
+        
+            function showSlides() {
+                let slides = document.querySelector('.slides');
+                let totalSlides = document.querySelectorAll('.slide').length;
+                slideIndex++;
+                if (slideIndex >= totalSlides) { slideIndex = 0; }
+                slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+                setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+            showSlides();
+        </script>
+    </div>
+    <div class="right">
+        <h1>Welcome To WasteWise</h1>
+        <span>Think Twice.....Waste Wise!!</span>
+        <div class="inside">
+            <span>JOIN OUR COMMUNITY!</span>
+            <form onsubmit="return validateForm()">
+                <div class="input">
+                    <div class="fc">
+                        <div>
+                            <label for="name">FIRST NAME:</label>
+                            <input type="text" id="name" required><br>
+                        </div>
+                        <div>
+                            <label for="phno">PHONE NUMBER:</label>
+                            <input type="text" id="phno" required><br>
+                        </div>
+                        <div>
+                            <label for="pass">PASSWORD:</label>
+                            <input type="password" id="pass" required><br>
+                        </div>
+                    </div>
+                    <div class="sc">
+                        <div>
+                            <label for="sname">LAST NAME:</label>
+                            <input type="text" id="sname" required><br>
+                        </div>
+                        <div>
+                            <label for="email">E-MAIL:</label>
+                            <input type="text" id="email" required><br>
+                        </div>
+                        <div>
+                            <label for="cpass">CONFIRM PASSWORD:</label>
+                            <input type="password" id="cpass" required><br>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="button" id="btn">
+            <button type="button"  onclick="validateForm()"><span>JOIN US!</span></button>
+        </div>
+        <div class="login">
+            <span>Already joined the community?<a href="loginn.html"> Log in</a></span>
+        </div>
+    </div>
+</body>
+
+</html>
