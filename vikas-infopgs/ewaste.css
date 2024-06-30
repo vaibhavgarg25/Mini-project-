@@ -1,0 +1,21 @@
+.heading{
+    background-image: url("https://media.licdn.com/dms/image/D4D22AQHGsqBdrhCAmg/feedshare-shrink_800/0/1715041035228?e=2147483647&v=beta&t=Fr07bKsd5o01SdIqMufQKpghEnjckoHukeAaA9GQKao");
+}
+.e{
+    height: 50vh;
+}
+.i{
+    height: 50vh;
+}
+.i .pic>img{
+    position: relative;
+    top: 3vh;
+}
+.s .pic>img{
+    height: 50vh;
+    position: relative;
+}
+.s .pic{
+    position: relative;
+    bottom: 6vh;
+}

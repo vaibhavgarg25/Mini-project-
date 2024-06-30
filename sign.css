@@ -25,6 +25,7 @@
 }
 .banner>h1{
     position: relative;
+    font-family: 'Berkshire Swash', sans-serif;
     left: 11vw;
     transition: transform 1.5s ease;
     color: #65CCB8;
@@ -73,15 +74,17 @@
     bottom: 8vh;
     left: 1vw;
     padding: 5px;
-    font-family: cursive;
+    font-family: 'Berkshire Swash', sans-serif;
+    font-size: 7vh;
     font-style: italic;
 }
 .right>span{
   position: relative;
   bottom: 6vh;
-  font-weight: bold;
+  left: 1.5vw;
   font-size: 23px;
   color: black;
+  font-family: 'Berkshire Swash', sans-serif;
 }
 .inside>span{
     color: #65CCB8;
