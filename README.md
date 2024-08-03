@@ -1,2 +1,2 @@
 <b>Deployment</b>:
-<a href="https://vaibhavgarg25.github.io/Mini-project-/"> Waste Wise</a>
+<a href="https://waste-wise-ochre.vercel.app/"> Waste Wise</a>
